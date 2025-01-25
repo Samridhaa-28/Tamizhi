@@ -76,7 +76,7 @@ def predict_character_sequence(image, model, class_labels):
 
 
 
-file_path = r"C:\Users\Samridhaa\OneDrive\Documents\New folder\Unicode_map - unicode_map (2).csv"
+file_path = r"Unicode_map - unicode_map (2).csv"
 try:
     data = pd.read_csv(file_path, header=None)
 except FileNotFoundError:
@@ -86,7 +86,7 @@ except pd.errors.EmptyDataError:
     print("The CSV file is empty.")
     raise
 
-test_folder_path = r"C:\Users\Samridhaa\OneDrive\Desktop\capstone\archive\test"
+test_folder_path = r"archive\test"
 class_labels = sorted(os.listdir(test_folder_path))
 
 data.columns = ['Class Name', 'Unicode']
@@ -112,7 +112,7 @@ def get_unicode_sequence(class_names):
 
 
 
-model = tf.keras.models.load_model(r"C:\Users\Samridhaa\OneDrive\Documents\New folder\tamizhi_ocr_model.h5")
+model = tf.keras.models.load_model(r"tamizhi_ocr_model.h5")
 
 #streamlit
 st.set_page_config(page_title="TAMIZHI", layout="centered")
