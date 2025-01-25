@@ -154,7 +154,7 @@ st.markdown(
 
 
 st.markdown('<div class="title-style">தமிழ்-E</div>', unsafe_allow_html=True)
-st.write("Upload an image")
+st.write("Upload a Tamil Brahmi Script Image for Prediction")
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"], key="upload", help="Upload your image here", label_visibility="collapsed")
 
 if uploaded_file is not None:
