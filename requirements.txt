@@ -100,7 +100,7 @@ notebook==7.2.1
 notebook_shim==0.2.4
 numpy==1.26.3
 opencv-python-headless
-
+opencv-python
 openpyxl==3.1.2
 opt-einsum==3.3.0
 optree==0.12.1
