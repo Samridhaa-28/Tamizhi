@@ -86,7 +86,9 @@ except pd.errors.EmptyDataError:
     print("The CSV file is empty.")
     raise
 
-test_folder_path = r"archive\test"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+test_folder_path = os.path.join(BASE_DIR, "archive", "test")
+#test_folder_path = r"archive\test"
 class_labels = sorted(os.listdir(test_folder_path))
 
 data.columns = ['Class Name', 'Unicode']
