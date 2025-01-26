@@ -1,5 +1,5 @@
-libgl1
 streamlit
+libgl1
 opencv-python-headless
 tensorflow
 numpy
